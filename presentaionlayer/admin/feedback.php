@@ -9,34 +9,33 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>Doctor<span>Student</span></h1>
 		<nav>
-		
 
 
-		
-		<ul> 
-			
-		
-		
-			<li><a href="index3.php">Add/Delete Doctor</a></li>
-			<li><a href="viewdoctor.php">View Doctors</a></li>
-			<li><a href=" viewpatients.php">View Patients</a></li>
+
+
+		<ul>
+
+
+
+			<li><a href="index3.php">Add/Delete Location</a></li>
+			<li><a href="viewdoctor.php">View Location</a></li>
+			<li><a href=" viewpatients.php">View Students</a></li>
 			<li><a href="viewappointments.php">View Appointments</a></li>
-			<li><a href="searchdonoradmin.php">Search Donor</a></li>
-						<li><a href="feedback.php">FeedBack</a></li>
+						<li><a href="feedback.php">Notes by Students</a></li>
 
 
-			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
-
-			
+			<li><a href="../../applicationlayer/index.php">Logout</a></li>
 
 
-	
-			
+
+
+
+
 
 		</ul>
-		
+
 
 
 
@@ -48,13 +47,13 @@
 </header>
 
 <body>
-	<h1 style="margin-left:35% ;margin-top:80px"   class="asd">Patients FeedBack</h1>
+	<h1 style="margin-left:35% ;margin-top:80px"   class="asd">Students Notes</h1>
 	<table class="table4" style="width: 100%">
 		<tr>
-		<th>Patient ID</th>
-		<th>Patient Name</th>
+		<th>Student ID</th>
+		<th>Student Name</th>
 		<th>FeedBack</th>
-		
+
 
 		</tr>
 
@@ -68,13 +67,13 @@
 
 
 			echo "</table";
-	
+
 
 
 		}
 
 		?>
-		
+
 	</table>
 </body>
 </html>

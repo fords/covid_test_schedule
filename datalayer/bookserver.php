@@ -1,4 +1,4 @@
-<?php  
+<?php
 
 $errors=array();
 include ('server.php');
@@ -13,14 +13,14 @@ if ($mysqli -> connect_errno) {
 
 if (isset($_POST['Book'])) {
 
-	
+
 
 
 
 	$AppoID = 	$mysqli -> real_escape_string($_POST['AppoID']);
 	$Date 	=	 $mysqli -> real_escape_string($_POST['Date']);
 	$Time 	= 	$mysqli -> real_escape_string($_POST['Time']);
-	
+
 	if (empty($AppoID)) {
 	array_push($errors,"Appointment ID is required");
 }
@@ -48,19 +48,19 @@ if(count($errors)==0){
   printf("%d Booked .\n", $mysqli->affected_rows);
 
 
- 
+
 
 }
 
 	elseif (!$mysqli -> query($sql)) {
   printf("%d Can't Book At The Moment.\n", $mysqli->affected_rows);
-	 } 
+	 }
 	  $_SESSION['AppoID']=$AppoID;
   $_SESSION['success']="you are now logged in";
   header('location:book.php');
 
 
- 
+
 
 }
 
@@ -76,7 +76,7 @@ if (isset($_POST['cancel'])) {
 	array_push($errors,"Appointment ID is required");
 }
  if (count($errors)==0) {
- 
+
 
 
 
@@ -86,24 +86,24 @@ if (isset($_POST['cancel'])) {
 
 		if ($mysqli->affected_rows==0) {
 			 array_push($errors,"Wrong Appointment ID");
-			
+
 			# code...
 		}
-		
+
 
 
 
 	}
 	  else {
-	  
+
 	  echo 'Book is Canceled';
-	  
+
 
 
 	  }
 
-	 	
-	
+
+
 
 
 
@@ -114,7 +114,7 @@ if (isset($_POST['cancel'])) {
 
 if (isset($_POST['Add'])) {
 
-	
+
 
 
 
@@ -155,11 +155,11 @@ if (empty($addEmail)) {
 	array_push($errors,"Email is required");
 	# code...
 }
-
-if (empty($addPassword)) {
-	array_push($errors,"Password is required");
-	# code...
-}
+// 
+// if (empty($addPassword)) {
+// 	array_push($errors,"Password is required");
+// 	# code...
+// }
 
 
 
@@ -183,7 +183,7 @@ if(count($errors)==0){
   printf("%d Row inserted.\n", $mysqli->affected_rows);
 
 
- 
+
 }
 
 
@@ -196,7 +196,7 @@ if(count($errors)==0){
 
 
 }
-	
+
 
 
 	# code...
@@ -212,7 +212,7 @@ if (isset($_POST['Delete'])) {
 	array_push($errors,"Doctor ID is required");
 }
  if (count($errors)==0) {
- 
+
 
 
 
@@ -222,18 +222,18 @@ if (isset($_POST['Delete'])) {
 
 		if ($mysqli->affected_rows==0) {
 			 array_push($errors,"Wrong Doctor ID");
-			
+
 			# code...
 		}
-		
+
 
 
 
 	}
 	  else {
-	  
+
 	  echo 'Book is Canceled';
-	  
+
 
 
 	  }
@@ -263,14 +263,12 @@ if (isset($_POST['Delete'])) {
    	$opt.="<option value ='{$row['categorey']}'>{$row['categorey']}</option>";
    }
    	$opt.="</select>";
-   
 
- 
 
-  
+
+
+
    }
 
 }
 -->
-
-

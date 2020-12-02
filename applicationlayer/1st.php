@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Patient</title>
+	<title>Student</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
 	</div>
 
 	<div class="input-group">
-		<label>Contact Number</label>
+		<label>Phone Number</label>
 		<input type="text" name="ContactNumber">
 
 
@@ -54,12 +54,7 @@
 
 	</div>
 
-	<div class="input-group">
-		<label>Blood type</label>
-		<input type="text" name="bloodtype">
 
-	</div>
-   
 
 	<div class="input-group">
 		<button type="submit" name="Register" class="btn">Register</button>
@@ -68,7 +63,7 @@
 	<p>
 		Already a member? <a href="login.php">Sign in </a>
 	</p>
-	
+
 
 
 

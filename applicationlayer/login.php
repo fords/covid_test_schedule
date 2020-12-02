@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Patient</title>
+	<title>Student</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="header">
-	<h2>Patient Login</h2>
+	<h2>Student Login</h2>
 </div>
 
 <form method="post" action="login.php">

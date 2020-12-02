@@ -3,38 +3,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Patient</title>
+	<title>Student</title>
 	<link rel="stylesheet"  href="style2.css">
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>COVID<span>Testing</span></h1>
 		<nav>
-		
 
 
-		
-		<ul> 
-			
-		
+
+
+		<ul>
+
+
 			<li><a href=" index.php">MyInfo</a></li>
 			<li><a href=" book.php">Book Appointment</a></li>
 			<li><a href=" view.php">View Appointment</a></li>
 			<li><a href="cancel.php">Cancel Booking</a></li>
-			<li><a href=" searchdoctor.php">Search Doctor</a></li>
-			<li><a href="donate.php">Donate Organ</a></li>
-			<li><a href="searchdonor.php">Search Donar</a></li>
-			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
-			
+			<!-- <li><a href=" searchlocation.php">Search Test Location</a></li> -->
+			<!-- <li><a href="result.php">Result</a>  	</li> -->
+			<li><a href="../../applicationlayer/index.php">Logout</a></li>
 
 
 
-	
-			
+
+
+
 
 		</ul>
-		
+
 
 
 
@@ -53,7 +52,7 @@
 
 <form method="post" action="index.php"  class="infoP" style="margin-left:-1px; margin-top:0px ;width: 40%;padding: 20px;border :3px solid #39ca74 ;background: white; border-radius: 10px 10px 10px 10px;">
 
-    
+
 
 
 
@@ -81,26 +80,21 @@
 	 	   <label> Blood Type : <?php echo $col['Bloodtype']; ?></label>
 	 	   	 	   <br>
 	 	   <br>
-    
-
 	 	   </div>
-    
-	
 
-	 	   	<div class="input-group">
-		<button type="submit" name="treatmentHistory" class="btn" style=" border-radius: 5px;margin-left: 80%; border:none;padding: 10px 20px 10px 20px">MyTreatment History</button>
-        
-           
-	
+
+
+
+
 </div>
 	<div class="input-group">
-		<button type="submit" name="feedback" class="btn" style=" border-radius: 5px;margin-left: 80%; border:none;padding: 10px 30px 10px 30px">Send Feedback</button>
+		<button type="submit" name="feedback" class="btn" style=" border-radius: 5px;margin-left: 80%; border:none;padding: 10px 30px 10px 30px">Medical Notes Submit</button>
 	</div>
 
-  
+
 </form>
 
-	<?php  
+	<?php
 
 
 	  if (isset($_POST['feedback'])) {
@@ -109,18 +103,18 @@
 border:none ;background: white; ">
 <div class="input-group">
 		<div  class="header" style="width: 78%;height: 25px;margin-top:-450px;color: white;background: #39ca74;text-align: center;border-radius: 10px 10px 5px 5px;border-bottom: none; border :1px solid #39ca74;padding: 10px 13px 10px 13px;margin-left:60%  ">
-	<h2>Feed Back</h2>
+	<h2> Medical history</h2>
 </div>
 <textarea name="feedx" placeholder="Write something.." style="height:300px;width: 500px ; margin-top:0px;margin-left: 60%;border:2px solid #39ca74;border-radius: 10px" ></textarea>
 <button type="submit" name="sendfeedback" class="btn" style=" border-radius: 15px 15px 15px 15px;margin-left: 60.5%; margin-top: 1px; border:1px solid #80DA9D ;padding: 10px 230px 10px 230px ; text-align: center;" >Send</button>
 
 
-	
+
 </div>
 
 
  <?php  }
- 
+
 
 ?>
 </form>
@@ -130,22 +124,22 @@ border:none ;background: white; ">
 </body>
 </html>
 
-<!--<?php if (isset($_SESSION['success'])) : ?> 
-            <div class="error success" > 
-                <h3> 
+<!--<?php if (isset($_SESSION['success'])) : ?>
+            <div class="error success" >
+                <h3>
                     <?php
-                         
-                        unset($_SESSION['success']); 
-                    ?> 
-                </h3> 
-            </div> 
-        <?php endif ?> 
 
-        $Patientsearch = mysqli_real_escape_string($mysqli,$_POST['Patientsearch']);
-	
-	$query="SELECT * FROM patients WHERE UserID=('$Patientsearch')";
+                        unset($_SESSION['success']);
+                    ?>
+                </h3>
+            </div>
+        <?php endif ?>
+
+        $Studentsearch = mysqli_real_escape_string($mysqli,$_POST['Studentsearch']);
+
+	$query="SELECT * FROM patients WHERE UserID=('$Studentsearch')";
 	$result2=mysqli_query($mysqli,$query);
 
-   
+
         <!-- information of the user logged in -->
         <!-- welcome message for the logged in user -->

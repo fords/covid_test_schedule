@@ -9,7 +9,7 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>Doctor<span>Student</span></h1>
 		<nav>
 		
 
@@ -20,7 +20,7 @@
 		
 			<li><a href="index2.php">My Info</a></li>
 			<li><a href="doctorapp.php">My Appointments</a></li>
-			<li><a href=" searchpatient.php">Search Patient</a></li>
+			<li><a href=" searchpatient.php">Search Student</a></li>
 			<li><a href="add.php">Add Description</a></li>
 			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
 
@@ -49,11 +49,11 @@
 		<th>Appointment ID</th>
 		<th>DATE</th>
 		<th>TIME</th>
-		<th>PatientID</th>
-		<th>PatientName</th>
-		<th>PatientAddress</th>
-		<th>PatientEmail</th>
-		<th>PatientContactNumber</th>
+		<th>StudentID</th>
+		<th>StudentName</th>
+		<th>StudentAddress</th>
+		<th>StudentEmail</th>
+		<th>StudentContactNumber</th>
 		<th>BloodGroup</th>
 
 		

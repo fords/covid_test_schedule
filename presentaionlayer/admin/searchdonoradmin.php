@@ -9,33 +9,33 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>Doctor<span>Student</span></h1>
 		<nav>
-		
 
 
-		
-		<ul> 
-			
-		
-			<li><a href="index3.php">Add/Delete Doctor</a></li>
-			<li><a href="viewdoctor.php">View Doctors</a></li>
-			<li><a href=" viewpatients.php">View Patients</a></li>
+
+
+		<ul>
+
+
+			<li><a href="index3.php">Add/Delete Location</a></li>
+			<li><a href="viewdoctor.php">View Location</a></li>
+			<li><a href=" viewpatients.php">View Students</a></li>
 			<li><a href="viewappointments.php">View Appointments</a></li>
-			<li><a href="searchdonoradmin.php">Search Donor</a></li>
-			<li><a href="feedback.php">FeedBack</a></li>
+			<!-- <li><a href="searchdonoradmin.php">Search Donor</a></li> -->
+			<li><a href="feedback.php">Notes by students</a></li>
 
-  			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
-
-			
+  			<li><a href="../../applicationlayer/index.php">Logout</a></li>
 
 
 
-	
-			
+
+
+
+
 
 		</ul>
-		
+
 
 
 
@@ -60,7 +60,7 @@
 		<button type="submit" name="SearchD" class="btnA" style="padding: 5px;margin-left: 90px;margin-top: 20px; padding-left: 15px; padding-right: 15px">Search</button>
 	</div>
 
-	
+
 
 
 
@@ -72,9 +72,9 @@
 	</form>
 
 
-	
 
-		<?php 
+
+		<?php
 
          if (isset($_POST['SearchD'])) {
 
@@ -90,7 +90,7 @@
 
 
 
-		</tr> <?php  
+		</tr> <?php
 
 
 		$dID3 =$mysqli -> real_escape_string($_POST['dID3']);
@@ -105,16 +105,15 @@
 
 
 			echo "</table";
-	
+
 
 
 		}
 	}?>
  </table>
-				
-	
+
+
 
 
 </body>
 </html>
-

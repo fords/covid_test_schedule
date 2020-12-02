@@ -34,6 +34,14 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
+CREATE TABLE `result` (
+  `resultID` int(11) NOT NULL,
+  `result` varchar(30) NOT NULL,
+  -- foreign key student
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
 
 --
 -- Table structure for table `bookapp`

@@ -9,7 +9,7 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>Doctor<span>Student</span></h1>
 		<nav>
 		
 
@@ -20,7 +20,7 @@
 		
 			<li><a href="index2.php">My Info</a></li>
 			<li><a href="doctorapp.php">My Appointments</a></li>
-			<li><a href=" searchpatient.php">Search Patient</a></li>
+			<li><a href=" searchpatient.php">Search Student</a></li>
 			<li><a href="add.php">Add Description</a></li>
 			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
 
@@ -53,8 +53,8 @@
 
 	<div class="input-group">
 		<label style="font-weight: bold; font-size: 30px">Search By:</label>
-		<label style="font-weight: bold">*Patient ID</label>
-		<label style="font-weight: bold">*Patient Name</label>
+		<label style="font-weight: bold">*Student ID</label>
+		<label style="font-weight: bold">*Student Name</label>
 		<input type="text" name="PID" >
 
 	</div>
@@ -82,10 +82,10 @@
          if (isset($_POST['SearchP'])) {
 
          ?>	<table class="table3" >
-         	<caption style="margin-left: 34px;padding: 10px;font-weight: bold;font-size: 30px;" class="asd">Patient Information</caption>>
+         	<caption style="margin-left: 34px;padding: 10px;font-weight: bold;font-size: 30px;" class="asd">Student Information</caption>>
 
 		<tr>
-		<th>PatientID</th>
+		<th>StudentID</th>
 		<th>Name</th>
 		<th>Address</th>
 		<th>Contact Number</th>
@@ -120,8 +120,8 @@
          ?>	<table class="table2">
          	<caption style="margin-left: 34px;padding: 10px;font-weight: bold;font-size: 30px;" class="asd">Treatment History</caption>>
 		<tr>
-		<th>PatientID</th>
-		<th>PatientName</th>
+		<th>StudentID</th>
+		<th>StudentName</th>
 		<th>Treatment</th>
 		<th>Doctor's Note</th>	
 

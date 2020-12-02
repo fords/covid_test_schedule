@@ -9,33 +9,32 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>Doctor<span>Student</span></h1>
 		<nav>
-		
 
 
-		
-		<ul> 
-			
-		
-			<li><a href="index3.php">Add/Delete Doctor</a></li>
-			<li><a href="viewdoctor.php">View Doctors</a></li>
-			<li><a href=" viewpatients.php">View Patients</a></li>
+
+
+		<ul>
+
+
+			<li><a href="index3.php">Add/Delete Location</a></li>
+			<li><a href="viewdoctor.php">View Site Location</a></li>
+			<li><a href=" viewpatients.php">View Students</a></li>
 			<li><a href="viewappointments.php">View Appointments</a></li>
-			<li><a href="searchdonoradmin.php">Search Donor</a></li>
-			<li><a href="feedback.php">FeedBack</a></li>
+			<li><a href="feedback.php">Notes by Students</a></li>
 
-  			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
-
-			
+  			<li><a href="../../applicationlayer/index.php">Logout</a></li>
 
 
 
-	
-			
+
+
+
+
 
 		</ul>
-		
+
 
 
 
@@ -48,7 +47,7 @@
 <body>
 
 		<div class="headerA">
-	<h2>Add Doctor</h2>
+	<h2>Add Testing Site</h2>
 </div>
 
 <form method="post" action="index3.php">
@@ -56,14 +55,14 @@
 	<?php include ('../../datalayer/errors.php'); ?>
 
 	<div class="input-groupA">
-		<label>Doctor ID</label>
+		<label>Test Location ID</label>
 		<input type="text" name="addID" >
 
 	</div>
 
 
 	<div class="input-groupA">
-		<label>Doctor Name</label>
+		<label>Supervisor Name</label>
 		<input type="text" name="addname" >
 
 
@@ -76,7 +75,7 @@
 	</div>
 
 	<div class="input-groupA">
-		<label>Contact Number</label>
+		<label>Phone Number</label>
 		<input type="text" name="addContactNumber">
 
 
@@ -88,46 +87,45 @@
 		<input type="text" name="addEmail">
 
 	</div>
-
+<!--
 	<div class="input-groupA">
 		<label>Password</label>
 		<input type="text" name="addpassword">
 
-	</div>
+	</div> -->
 <div class="input-groupA">
 	<label>Category</label>
 	   	<select name="addcategory" class="xd">
-	   		<option value="bone" >bones</option>
-	   		<option value="heart">heart</option>
-	   		<option value="Dentistry">Dentistry</option>
-	   		<option value="MentalHealth">Mental Health</option>
-	   		<option value="Surgery">Surgery</option>
-
-	   		
-
+	   		<option value="COVID TEST" >COVID TESTING</option>
 
 	   	</select>
 	   	</div>
 
+
+			<!-- <option value="heart">heart</option>
+			<option value="Dentistry">Dentistry</option>
+			<option value="MentalHealth">Mental Health</option>
+			<option value="Surgery">Surgery</option> -->
+
 	<div class="input-groupA">
-		<button type="submit" name="Add" class="btnA">Add Doctor</button>
+		<button type="submit" name="Add" class="btnA">Add Test Location</button>
 	</div>
 
 
-	
+
 
 
 
 
 </form>
 	<div class="headerAD">
-	<h2>Delete Doctor</h2>
+	<h2>Test Location</h2>
 </div>
 
 <form method="post" action="index3.php" class="delete">
 
 	<div class="input-groupA">
-		<label>Doctor ID</label>
+		<label>Test Location</label>
 		<input type="text" name="deleteID" >
 
 	</div>
@@ -142,7 +140,7 @@
 
 
 
-	
+
 
 </body>
 </html>

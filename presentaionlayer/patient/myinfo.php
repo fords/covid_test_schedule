@@ -3,38 +3,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Patient</title>
+	<title>Student</title>
 	<link rel="stylesheet"  href="style2.css">
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>COVID<span>Testing</span></h1>
 		<nav>
-		
 
 
-		
-		<ul> 
-			
-		
+
+
+		<ul>
+
+
 			<li><a href=" index.php">MyInfo</a></li>
 			<li><a href=" book.php">Book Appointment</a></li>
 			<li><a href=" view.php">View Appointment</a></li>
 			<li><a href="cancel.php">Cancel Booking</a></li>
-			<li><a href=" searchdoctor.php">Search Doctor</a></li>
-			<li><a href="donate.php">Donate Organ</a></li>
-			<li><a href="searchdonor.php">Search Donar</a></li>
-			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
-			
+			<!-- <li><a href=" searchlocation.php">Search Test Location</a></li> -->
+			<li><a href="../../applicationlayer/index.php">Logout</a></li>
 
 
 
-	
-			
+
+
+
 
 		</ul>
-		
+
 
 
 
@@ -84,34 +82,34 @@
 	 	   	<div class="input-group">
 		<button type="submit" name="treatmentHistory" class="btn">My-Treatment-History</button>
 	</div>
-	 	   
 
 
 
-	
-        
-           
-	
+
+
+
+
+
 </div>
 
-  
+
 </form>
 
 
 <?php  if (isset($_POST['treatmentHistory'])) {
 			 ?>
-		
+
          	<table class="table2">
          	<caption style="margin-left: 34px;padding: 10px;font-weight: bold;font-size: 30px;" class="asd">Treatment History</caption>
 		<tr>
 		<th>DoctorID</th>  ?>
 		<th>DoctorName</th>
 		<th>Treatment</th>
-		<th>Doctor's Note</th>	
+		<th>Doctor's Note</th>
 
 
-		</tr> 
-		
+		</tr>
+
 		<?php
 
 		$PID =$mysqli -> real_escape_string($_POST['UserID']);
@@ -126,7 +124,7 @@
 
 
 			echo "</table";
-	
+
 
 
 		}
@@ -142,7 +140,6 @@
 
 
 
- 
 
 
 
@@ -155,7 +152,8 @@
 
 
 
-	
+
+
 
 
 
@@ -165,16 +163,16 @@
 </body>
 </html>
 
-<!--<?php if (isset($_SESSION['success'])) : ?> 
-            <div class="error success" > 
-                <h3> 
+<!--<?php if (isset($_SESSION['success'])) : ?>
+            <div class="error success" >
+                <h3>
                     <?php
-                         
-                        unset($_SESSION['success']); 
-                    ?> 
-                </h3> 
-            </div> 
-        <?php endif ?> 
-   
+
+                        unset($_SESSION['success']);
+                    ?>
+                </h3>
+            </div>
+        <?php endif ?>
+
         <!-- information of the user logged in -->
         <!-- welcome message for the logged in user -->

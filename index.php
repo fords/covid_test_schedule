@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Doctor Patient</title>
+	<title>Covid Testing</title>
 	<link rel="stylesheet"  href="doctorpatient.css">
 
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -23,25 +23,25 @@
 
 	<div class="wrapper" style="text-decoration: none;">
 	<div class="btn" > <a href="login.php"  >
-<button type="button" class="buttonP">Patient</button>
+<button type="button" class="buttonP">Student</button>
 </div>
 
 </div>
 
 
-	<div class="wrapper" style="text-decoration: none;">
+	<!-- <div class="wrapper" style="text-decoration: none;">
 	<div class="btn" > <a href="login2.php"  >
 <button type="button" class="buttonD">Doctor</button>
         </a>
-</div>
+</div> -->
 
 </div>
 
-	
 
 
- 
-	
+
+
+
 
 
 

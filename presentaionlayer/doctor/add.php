@@ -9,7 +9,7 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>Doctor<span>Student</span></h1>
 		<nav>
 		
 
@@ -20,7 +20,7 @@
 		
 			<li><a href="index2.php">My Info</a></li>
 			<li><a href="doctorapp.php">My Appointments</a></li>
-			<li><a href="searchpatient.php">Search Patient</a></li>
+			<li><a href="searchpatient.php">Search Student</a></li>
 			<li><a href="add.php">Add Description</a></li>
 			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
 
@@ -55,8 +55,8 @@
 
 
 			<div class="input-group">
-		<label style="font-weight: bold;">PatientID</label>
-	   	<input type="text" name="Patientsearch" class="xd">
+		<label style="font-weight: bold;">StudentID</label>
+	   	<input type="text" name="Studentsearch" class="xd">
 
 
 	</div>
@@ -84,9 +84,9 @@
 
 	  if (isset($_POST['SearchPA'])) {
 
-	$Patientsearch = mysqli_real_escape_string($mysqli,$_POST['Patientsearch']);
+	$Studentsearch = mysqli_real_escape_string($mysqli,$_POST['Studentsearch']);
 	
-	$query="SELECT * FROM patients WHERE UserID=('$Patientsearch')";
+	$query="SELECT * FROM patients WHERE UserID=('$Studentsearch')";
 	$result2=mysqli_query($mysqli,$query);
 	
 
@@ -96,7 +96,7 @@
 ?>
 
 <div class="input-group">
-		<label>Patient ID</label>
+		<label>Student ID</label>
 		<input type="text" name="descID" value="<?php echo $row2['UserID']; ?>">
 
 	</div>
