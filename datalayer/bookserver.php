@@ -17,14 +17,22 @@ $pass ='password123';
 $charset = 'utf8mb4';
 
 
-try {
-  $mysqli = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-  // set the PDO error mode to exception
-  $mysqli->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+$mysqli = new mysqli("db4free.net","dfdfdfdf1","password123","jfdkrwer3");
+
+if ($mysqli -> connect_errno) {
+  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+  exit();
 }
+
+//
+// try {
+//   $mysqli = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+//   // set the PDO error mode to exception
+//   $mysqli->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//   // echo "Connected successfully";
+// } catch(PDOException $e) {
+//   echo "Connection failed: " . $e->getMessage();
+// }
 
 if (isset($_POST['Book'])) {
 
