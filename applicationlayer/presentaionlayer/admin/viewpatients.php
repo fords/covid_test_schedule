@@ -26,7 +26,7 @@
 						<li><a href="feedback.php"> Notes by students</a></li>
 
 
-			<li><a href="../../applicationlayer/index.php">Logout</a></li>
+			<li><a href="../../index.php">Logout</a></li>
 
 
 

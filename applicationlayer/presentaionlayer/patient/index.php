@@ -24,7 +24,7 @@
 			<li><a href="cancel.php">Cancel Booking</a></li>
 			<!-- <li><a href=" searchlocation.php">Search Test Location</a></li> -->
 			<!-- <li><a href="result.php">Result</a>  	</li> -->
-			<li><a href="../../applicationlayer/index.php">Logout</a></li>
+			<li><a href="../../index.php">Logout</a></li>
 
 
 

@@ -24,7 +24,7 @@
 			<li><a href="viewappointments.php">View Appointments</a></li>
 			<li><a href="feedback.php">Notes by Students</a></li>
 
-  			<li><a href="../../applicationlayer/index.php">Logout</a></li>
+  			<li><a href="../../index.php">Logout</a></li>
 
 
 
