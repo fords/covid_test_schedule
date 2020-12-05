@@ -3,16 +3,19 @@
 $errors=array();
 include ('server.php');
 
+// $mysqli = new mysqli("localhost","root","","registration");
+//
+// if ($mysqli -> connect_errno) {
+//   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+//   exit();
+// }
 
-// remote database
 $host = 'db4free.net';
 $db = 'jfdkrwer3';
 $user ='dfdfdfdf1';
 $pass ='password123';
 $charset = 'utf8mb4';
 
-// $mysqli = new mysqli("localhost","root","","registration");
-// $mysqli = new mysqli($host,$user,$pass);
 
 try {
   $mysqli = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
@@ -21,13 +24,6 @@ try {
   echo "Connected successfully";
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
-// }
-//
-// if ($mysqli -> connect_errno) {
-//   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-//   exit();
-// }
-
 
 
 if (isset($_POST['Book'])) {

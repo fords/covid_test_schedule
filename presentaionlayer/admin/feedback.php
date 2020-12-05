@@ -9,7 +9,7 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Student</span></h1>
+	<h1>COVID<span>Testing</span></h1>
 		<nav>
 
 
@@ -52,7 +52,7 @@
 		<tr>
 		<th>Student ID</th>
 		<th>Student Name</th>
-		<th>FeedBack</th>
+		<th>Medical Notes by students</th>
 
 
 		</tr>

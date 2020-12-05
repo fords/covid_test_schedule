@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Covid Testing</title>
-	<link rel="stylesheet"  href="doctorpatient.css">
+	<link rel="stylesheet"  href="covidapp.css">
 
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
@@ -29,11 +29,6 @@
 </div>
 
 
-	<!-- <div class="wrapper" style="text-decoration: none;">
-	<div class="btn" > <a href="login2.php"  >
-<button type="button" class="buttonD">Doctor</button>
-        </a>
-</div> -->
 
 </div>
 

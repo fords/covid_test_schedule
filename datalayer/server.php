@@ -4,15 +4,12 @@
 session_start();
 $errors=array();
 
-
-// development connection
 // $mysqli = new mysqli("localhost","root","","registration");
 //
 // if ($mysqli -> connect_errno) {
 //   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
 //   exit();
 // }
-
 
 // remote database connection
 $host = 'db4free.net';
@@ -29,8 +26,6 @@ try {
   echo "Connected successfully";
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
-
-
 
 
 if (isset($_POST['Register'])) {

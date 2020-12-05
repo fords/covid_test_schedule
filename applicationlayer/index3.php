@@ -9,7 +9,7 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Student</span></h1>
+	<h1>COVID<span>Testing</span></h1>
 		<nav>
 
 
@@ -25,13 +25,6 @@
 			<li><a href="feedback.php">Notes by students</a></li>
 
   			<li><a href="index.php">Logout</a></li>
-
-
-
-
-
-
-
 
 		</ul>
 
