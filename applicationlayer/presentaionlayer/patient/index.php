@@ -1,5 +1,5 @@
 
-<?php include ('../../datalayer/server.php');
+<?php 
  include '../../datalayer/bookserver.php';
  $temp= $_SESSION['UserID'];
  ?>
