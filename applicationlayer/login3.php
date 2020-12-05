@@ -1,4 +1,4 @@
-<?php include('../datalayer/server.php') ?>
+<?php include('datalayer/server.php') ?>
 
 <!DOCTYPE html>
 <html>
@@ -34,8 +34,8 @@
 		<button type="submit" name="Login3" class="btnA"> Login</button>
 	</div>
 
-	
-	
+
+
 
 
 

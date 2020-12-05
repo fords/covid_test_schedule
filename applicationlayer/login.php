@@ -1,4 +1,4 @@
-<?php include('../datalayer/server.php') ?>
+<?php include('datalayer/server.php') ?>
 
 <!DOCTYPE html>
 <html>
@@ -37,7 +37,7 @@
 	<p>
 		Not a member? <a href="1st.php">Sign Up </a>
 	</p>
-	
+
 
 
 

@@ -1,4 +1,4 @@
-<?php include('../datalayer/server.php'); ?>
+<?php include('datalayer/server.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
