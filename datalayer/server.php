@@ -11,7 +11,7 @@ $errors=array();
 //   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
 //   exit();
 // }
-remote database connection
+// remote database connection
 $host = 'db4free.net';
 $db = 'jfdkrwer3';
 $user ='dfdfdfdf1';
