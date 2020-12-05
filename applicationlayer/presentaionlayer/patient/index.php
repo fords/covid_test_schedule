@@ -1,5 +1,7 @@
 
 <?php include ('../../datalayer/server.php');
+ include '../../datalayer/bookserver.php';
+ $temp= $_SESSION['UserID'];
  ?>
 <!DOCTYPE html>
 <html>
@@ -61,27 +63,38 @@
 <div class="contentP" style="font-weight: bold;">
 
 
+	<?php $result13 = mysqli_query($mysqli, "SELECT * FROM patients ");  ;
+			// $result13=$mysqli->query($sql13);
+			if(mysqli_num_rows($result13)>1){
 
-	<label>ID: <?php echo "" .isset($_SESSION['UserID']);?></label>
+	// you can display more row data by id
 
-	 	   <br>
-	 	   <br>
-	 	   <label> Email : <?php echo $col['Email']; ?></label>
-	 	   	 	   <br>
-	 	   <br>
-	 	   <label> Name : <?php echo $col['Name']; ?></label>
-	 	   	 	   <br>
-	 	   <br>
-	 	   <label> Address : <?php echo $col['Address']; ?></label>
-	 	   	 	   <br>
-	 	   <br>
-	 	   <label> Contact Number : <?php echo $col['ContactNumber']; ?></label>
-	 	   	 	   <br>
-	 	   <br>
-	 	   <label> Blood Type : <?php echo $col['Bloodtype']; ?></label>
-	 	   	 	   <br>
-	 	   <br>
-	 	   </div>
+
+				while ($row13=$result13->fetch_assoc()) {
+						// echo "test";
+					if ($row13["UserID"] == $temp ){
+						echo "ID : ";
+			 	    echo $row13["UserID"];
+						echo "</br>";
+
+						echo "Name : ";
+			 	    echo $row13["Name"];
+						echo "</br>";
+
+						echo "Address : ";
+			 	    echo $row13["Address"];
+						echo "</br>";
+
+						echo "Email : ";
+			 	    echo $row13["Email"];
+						echo "</br>";
+					}
+
+				}
+			}
+
+			?>
+	</div>
 
 
 
