@@ -5,8 +5,13 @@ session_start();
 $errors=array();
 
 
-
-// remote database connection
+// $mysqli = new mysqli("localhost","root","","registration");
+//
+// if ($mysqli -> connect_errno) {
+//   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+//   exit();
+// }
+remote database connection
 $host = 'db4free.net';
 $db = 'jfdkrwer3';
 $user ='dfdfdfdf1';
@@ -21,14 +26,8 @@ if ($mysqli -> connect_errno) {
   exit();
 }
 
-// try {
-//   $mysqli = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-//   // set the PDO error mode to exception
-//   $mysqli->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//   // echo "Connected successfully";
-// } catch(PDOException $e) {
-//   echo "Connection failed: " . $e->getMessage();}
-//
+
+
 
 if (isset($_POST['Register'])) {
 
@@ -365,7 +364,7 @@ $sqlfeed = "INSERT INTO  feedback (pID,feedback) VALUES ('$userprofile','$feedba
 
 
 
- $mysqli -> null;
+ // $mysqli = null;
 
 
 
