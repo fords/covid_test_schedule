@@ -363,7 +363,7 @@ $sqlfeed = "INSERT INTO  feedback (pID,feedback) VALUES ('$userprofile','$feedba
 
 
 
- $mysqli -> close();
+ $mysqli -> null;
 
 
 
