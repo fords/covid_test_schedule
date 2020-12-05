@@ -60,7 +60,7 @@
 
 
 	<label>ID: <?php echo "" .$_SESSION['UserID'];?></label>
-
+			 <!-- echo "info". posix_getuid() -->
 	 	   <br>
 	 	   <br>
 	 	   <label> Email : <?php echo $col['Email']; ?></label>

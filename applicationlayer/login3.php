@@ -13,7 +13,7 @@
 
 <form method="post" action="login3.php" class="Aform">
 
-	<?php include ('../datalayer/errors.php')?>
+	<?php include ('datalayer/errors.php')?>
 
 	<div class="input-groupA">
 		<label>Admin ID</label>

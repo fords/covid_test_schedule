@@ -3,7 +3,7 @@
 $errors=array();
 include ('server.php');
 
-// $mysqli = new mysqli("localhost","root","","registration");
+// $mysqli = new mysqli("localhost","root","","registration");g
 //
 // if ($mysqli -> connect_errno) {
 //   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
