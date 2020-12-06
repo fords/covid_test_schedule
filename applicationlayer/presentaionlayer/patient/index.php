@@ -62,7 +62,7 @@ $temp= $_SESSION['UserID'] ; ?>
 
 
 
-		<label>ID: <?php echo $temp; echo"</br>" ?></label>
+		<!-- <label>ID: <php echo $temp; echo"</br>" ?></label> -->
 
 
 
