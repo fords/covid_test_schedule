@@ -24,14 +24,14 @@ if ($mysqli -> connect_errno) {
   exit();
 }
 
+  $userprofile=isset($_SESSION['UserID']); //current log in user
+
 
 if (isset($_POST['Book'])) {
 
 
-
-
-
-	$AppoID = 	$mysqli -> real_escape_string($_POST['AppoID']);
+	// $_SESSION['UserID'] = 	$mysqli -> real_escape_string($_POST['patientID']);
+  $AppoID = 	$mysqli -> real_escape_string($_POST['AppoID']);
 	$Date 	=	 $mysqli -> real_escape_string($_POST['Date']);
 	$Time 	= 	$mysqli -> real_escape_string($_POST['Time']);
 
