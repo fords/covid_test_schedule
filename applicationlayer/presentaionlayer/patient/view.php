@@ -1,4 +1,5 @@
-<?php include '../../datalayer/bookserver.php'; ?>
+<?php include '../../datalayer/bookserver.php';
+$temp= $_SESSION['UserID'] ; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +51,7 @@
 		<th>Category</th>
 
 		</tr>
-		<?php $sql3="SELECT  * FROM bookapp , doctor   WHERE patientID=('$userprofile') AND  docID=DoctorID "  ;
+		<?php $sql3="SELECT  * FROM bookapp , doctor   WHERE patientID=$temp"  ;
 		$result3=$mysqli->query($sql3);
 		if(mysqli_num_rows($result3)>=1){
 			while ($row3=$result3->fetch_assoc()) {
