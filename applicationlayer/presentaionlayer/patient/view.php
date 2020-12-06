@@ -51,7 +51,7 @@ $temp= $_SESSION['UserID'] ; ?>
 		<th>Category</th>
 
 		</tr>
-		<?php $sql3="SELECT  * FROM bookapp , doctor"  ;
+		<?php $sql3="SELECT  * FROM bookapp , doctor WHERE patientID=$temp AND  docID=DoctorID"  ;
 		$result3=$mysqli->query($sql3);
 		if(mysqli_num_rows($result3)>=1){
 			while ($row3=$result3->fetch_assoc()) {
