@@ -169,10 +169,19 @@ if (empty($Password)) {
 
 if (isset($_GET['logout'])) {
 
-	session_destroy();
-	usset($_SESSION['UserID']);
-	header('location:login.php');
-	}
+  $_SESSION = array();
+
+    if (ini_get("session.use_cookies")) {
+      $params = session_get_cookie_params();
+      setcookie(session_name(), '', time() - 42000,
+          $params["path"], $params["domain"],
+          $params["secure"], $params["httponly"]
+      );
+    }
+
+    // Finally, destroy the session.
+session_destroy();
+}
 
 
 	if (isset($_GET['My info'])) {
@@ -249,8 +258,19 @@ $querydoctor="SELECT * FROM doctor WHERE DoctorID=('$doctorprofile')";
 
  if (isset($_GET['logout'])) {
 
-	session_destroy();
-	usset($_SESSION['UserID']);
+   $_SESSION = array();
+
+     if (ini_get("session.use_cookies")) {
+       $params = session_get_cookie_params();
+       setcookie(session_name(), '', time() - 42000,
+           $params["path"], $params["domain"],
+           $params["secure"], $params["httponly"]
+       );
+     }
+
+     // Finally, destroy the session.
+ session_destroy();
+
 	header('location:login.php');
 	}
 
