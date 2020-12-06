@@ -24,8 +24,9 @@ if ($mysqli -> connect_errno) {
   exit();
 }
 
-  $userprofile=isset($_SESSION['UserID']); //current log in user
+  // $userprofile=isset($_SESSION['UserID']);
 
+$currentuserID = $_SESSION['UserID']; //current log in user
 
 if (isset($_POST['Book'])) {
 
@@ -55,7 +56,7 @@ if(count($errors)==0){
 
 
     $docID = $_REQUEST['docID'];
-	$sql = "INSERT INTO  bookapp (AppoID, Date, Time, patientID,docID) VALUES ('$AppoID','$Date','$Time','$userprofile','$docID') ";
+	$sql = "INSERT INTO  bookapp (AppoID, Date, Time, patientID,docID) VALUES ('$AppoID','$Date','$Time','$currentuserID','$docID') ";
 	$result99=$mysqli ->query($sql);
 
 		if ($result99) {
