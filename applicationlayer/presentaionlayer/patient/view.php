@@ -83,22 +83,7 @@ AND docID= ('$userprofile')
 .$row3["Doctorname"]."</td><td>".$row3["Address"]."</td><td>".$row3["ContactNumber"]."</td><td>".$row3["category"]
 
 		</tr>
-		<?php $sql4="SELECT doctor.Doctorname,doctor.Address,doctor.ContactNumber,doctor.category FROM doctor " ;
-		$result4=$mysqli->query($sql4);
-		if(mysqli_num_rows($result4)>1){
-			while ($row4=$result4->fetch_assoc()) {
 
-				echo "<tr><td>".$row4["Doctorname"]."</td><td>".$row4["Address"]."</td><td>".$row4["ContactNumber"]."</td><td>".$row4["category"]."</td></tr>";
-			}
-			echo "</table";
-
-
-
-
-
-		}
-
-		?>
 
 	</table>
 
