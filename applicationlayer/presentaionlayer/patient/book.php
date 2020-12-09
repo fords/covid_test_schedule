@@ -67,7 +67,7 @@
 
 
 			<div class="input-group">
-		<label>Categery</label>
+		<label>category</label>
 	   	<select name="categorey" class="xd">
 	   		<option value="COVID TEST" > COVID TESTING</option>
 
