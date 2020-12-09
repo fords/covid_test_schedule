@@ -109,9 +109,7 @@ if(count($errors)==0){
     if(move_uploaded_file($_FILES['']))
 
 
-  $_SESSION['UserID']=$UserID;
-  $_SESSION['success']="you are now logged in";
-  header('location:../presentationlayer/patient/index.php');
+  header('location:login.php');
 
 
 }
