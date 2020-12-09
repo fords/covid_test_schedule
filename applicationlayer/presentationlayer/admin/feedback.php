@@ -16,7 +16,7 @@
 
 			<li><a href="index3.php">Add/Delete Location</a></li>
 			<li><a href="viewdoctor.php">View Location</a></li>
-			<li><a href=" viewpatients.php">View Students</a></li>
+			<!-- <li><a href=" viewpatients.php">View Students</a></li> -->
 			<li><a href="viewappointments.php">View Appointments</a></li>
 			<li><a href="feedback.php">Notes by Students</a></li>
 			<li><a href="../../index.php">Logout</a></li>
