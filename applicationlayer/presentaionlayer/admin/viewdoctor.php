@@ -55,7 +55,7 @@
 		<th>Supervisor Name</th>
 		<th>Email</th>
 		<th>Address</th>
-		<th>Contact Number</th>
+		<th>Phone Number</th>
 		<th>Category</th>
 
 		</tr>
