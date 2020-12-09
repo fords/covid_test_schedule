@@ -12,30 +12,14 @@
 	<h1>COVID<span>Testing</span></h1>
 		<nav>
 
-
-
-
 		<ul>
-
-
-
 			<li><a href="index3.php">Add/Delete Location</a></li>
 			<li><a href="viewdoctor.php">View Location</a></li>
 			<li><a href=" viewpatients.php">View Students</a></li>
 			<li><a href="viewappointments.php">View Appointments</a></li>
-						<li><a href="feedback.php"> Notes by students</a></li>
-
-
+			<li><a href="feedback.php"> Notes by students</a></li>
 			<li><a href="../../index.php">Logout</a></li>
-
-
-
-
-
 		</ul>
-
-
-
 
 	</nav>
 
@@ -51,10 +35,8 @@
 		<th>Student ID</th>
 		<th>Student Name</th>
 		<th>Address</th>
-		<th>Contact Number</th>
+		<th>Phone Number</th>
 		<th>Email</th>
-		<th>Blood Group</th>
-
 		</tr>
 
 		<?php $sql3="SELECT  * FROM  patients " ;
@@ -62,13 +44,11 @@
 		if(mysqli_num_rows($result3)>=1){
 			while ($row3=$result3->fetch_assoc()) {
 
-				echo "<tr><td>".$row3["UserID"]."</td><td>".$row3["Name"]."</td><td>".$row3["Address"]."</td><td>".$row3["ContactNumber"]."</td><td>".$row3['Email']."</td><td>".$row3['Bloodtype']."</td></tr>";
+				echo "<tr><td>".$row3["UserID"]."</td><td>".$row3["Name"]."</td><td>".$row3["Address"]."</td><td>".$row3["ContactNumber"]."</td><td>".$row3['Email']."</td><tr>"";
 			}
 
 
 			echo "</table";
-
-
 
 		}
 

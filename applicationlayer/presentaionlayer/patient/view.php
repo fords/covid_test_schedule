@@ -58,38 +58,13 @@ $temp= $_SESSION['UserID'] ; ?>
 
 				echo "<tr><td>".$row3["AppoID"]."</td><td>".$row3["Date"]."</td><td>".$row3["Time"]."</td><td>".$row3["docID"]."</td><td>".$row3['Doctorname']."</td><td>".$row3['Address']."</td><td>".$row3['ContactNumber']."</td><td>".$row3["categorey"]."</td></tr>";
 			}
-
-
 			echo "</table";
-
-
 
 		}
 
 		?>
 
 	</table>
-
-
-<!--	<table class="table3">
-		<tr>
-		<th>Doctor Name</th>
-		<th>Address</th>
-		<th>Contact Number</th>
-		<th>Category</th>
-		doctor.Doctorname , doctor.Address,doctor.ContactNumber,doctor.category
-,doctor
-AND docID= ('$userprofile')
-.$row3["Doctorname"]."</td><td>".$row3["Address"]."</td><td>".$row3["ContactNumber"]."</td><td>".$row3["category"]
-
-		</tr>
-
-
-	</table>
-
-
--->
-
 
 </body>
 </html>
