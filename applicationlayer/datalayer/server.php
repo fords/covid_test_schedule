@@ -2,6 +2,8 @@
 
 
 session_start();
+$_SESSION = array();
+
 $errors=array();
 
 
@@ -109,9 +111,7 @@ if(count($errors)==0){
     if(move_uploaded_file($_FILES['']))
 
 
-  $_SESSION['UserID']=$UserID;
-  $_SESSION['success']="you are now logged in";
-  header('location:../presentationlayer/patient/index.php');
+  header('location:login.php');
 
 
 }
@@ -155,7 +155,7 @@ if (empty($Password)) {
 
 	$_SESSION['UserID']=$UserID;
   	$_SESSION['success']="you are now logged in";
-  header('location:../presentationlayer/patient/index.php');
+  header('location:../presentaionlayer/patient/index.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
 
@@ -168,20 +168,22 @@ if (empty($Password)) {
 
 
 if (isset($_GET['logout'])) {
+  unset($_SESSION);
+  $userprofile = null;
+	session_destroy();
+	usset($_SESSION['UserID']);
+	header('location:login.php');
 
-  $_SESSION = array();
-
-    if (ini_get("session.use_cookies")) {
+  if (ini_get("session.use_cookies")) {
       $params = session_get_cookie_params();
       setcookie(session_name(), '', time() - 42000,
           $params["path"], $params["domain"],
           $params["secure"], $params["httponly"]
       );
-    }
+  }
 
-    // Finally, destroy the session.
-session_destroy();
-}
+
+	}
 
 
 	if (isset($_GET['My info'])) {
@@ -239,7 +241,7 @@ if (empty($DoctorPassword2)) {
 
 	$_SESSION['DoctorID']=$DoctorID2;
   	$_SESSION['success']="you are now logged in";
-  	header('location:../presentationlayer/doctor/index2.php');
+  	header('location:../presentaionlayer/doctor/index2.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
 
@@ -259,26 +261,24 @@ $querydoctor="SELECT * FROM doctor WHERE DoctorID=('$doctorprofile')";
  if (isset($_GET['logout'])) {
 
    $_SESSION = array();
-
-     if (ini_get("session.use_cookies")) {
-       $params = session_get_cookie_params();
-       setcookie(session_name(), '', time() - 42000,
-           $params["path"], $params["domain"],
-           $params["secure"], $params["httponly"]
-       );
-     }
-
-     // Finally, destroy the session.
- session_destroy();
-
+   $userprofile = null;
+	usset($_SESSION['UserID']);
 	header('location:login.php');
+    if (ini_get("session.use_cookies")) {
+      $params = session_get_cookie_params();
+      setcookie(session_name(), '', time() - 42000,
+          $params["path"], $params["domain"],
+          $params["secure"], $params["httponly"]
+      );
+    }
+  	session_destroy();
 	}
 
 
 
 
  if (isset($_POST['treatmentHistory'])) {
-		  	header('../presentationlayer/patient/myinfo.php');
+		  	header('../presentaionlayer/patient/myinfo.php');
 			 ?>
 
          	<table class="table2" style="margin-top: -10px">
@@ -351,7 +351,7 @@ if (empty($adminpassword)) {
 
 	$_SESSION['AdminID']=$adminID;
   	$_SESSION['success']="you are now logged in";
-  	header('location:../presentationlayer/admin/index3.php');
+  	header('location:../presentaionlayer/admin/index3.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
 
@@ -383,7 +383,7 @@ $sqlfeed = "INSERT INTO  feedback (pID,feedback) VALUES ('$userprofile','$feedba
 
 
 
-// $mysqli -> close();
+
  // $mysqli = null;
 
 
