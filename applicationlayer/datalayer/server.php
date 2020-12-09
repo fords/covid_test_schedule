@@ -113,7 +113,11 @@ if(count($errors)==0){
 
   $_SESSION['UserID']=$UserID;
   $_SESSION['success']="you are now logged in";
+<<<<<<< HEAD
   header('index.php');
+=======
+  header('location:../presentaionlayer/patient/index.php');
+>>>>>>> parent of 64ec37d... Spelling fix
 
 
 }
