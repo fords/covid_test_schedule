@@ -2,6 +2,8 @@
 
 
 session_start();
+$_SESSION = array();
+
 $errors=array();
 
 
@@ -109,9 +111,11 @@ if(count($errors)==0){
     if(move_uploaded_file($_FILES['']))
 
 
-  $_SESSION['UserID']=$UserID;
-  $_SESSION['success']="you are now logged in";
-  header('location:../presentationlayer/patient/index.php');
+  // $_SESSION['UserID']=$UserID;
+  // $_SESSION['success']="you are now logged in";
+
+  header('location:login.php');
+
 
 
 }
@@ -168,20 +172,22 @@ if (empty($Password)) {
 
 
 if (isset($_GET['logout'])) {
+  unset($_SESSION);
+  $userprofile = null;
+	session_destroy();
+	usset($_SESSION['UserID']);
+	header('location:login.php');
 
-  $_SESSION = array();
-
-    if (ini_get("session.use_cookies")) {
+  if (ini_get("session.use_cookies")) {
       $params = session_get_cookie_params();
       setcookie(session_name(), '', time() - 42000,
           $params["path"], $params["domain"],
           $params["secure"], $params["httponly"]
       );
-    }
+  }
 
-    // Finally, destroy the session.
-session_destroy();
-}
+
+	}
 
 
 	if (isset($_GET['My info'])) {
@@ -259,19 +265,17 @@ $querydoctor="SELECT * FROM doctor WHERE DoctorID=('$doctorprofile')";
  if (isset($_GET['logout'])) {
 
    $_SESSION = array();
-
-     if (ini_get("session.use_cookies")) {
-       $params = session_get_cookie_params();
-       setcookie(session_name(), '', time() - 42000,
-           $params["path"], $params["domain"],
-           $params["secure"], $params["httponly"]
-       );
-     }
-
-     // Finally, destroy the session.
- session_destroy();
-
+   $userprofile = null;
+	usset($_SESSION['UserID']);
 	header('location:login.php');
+    if (ini_get("session.use_cookies")) {
+      $params = session_get_cookie_params();
+      setcookie(session_name(), '', time() - 42000,
+          $params["path"], $params["domain"],
+          $params["secure"], $params["httponly"]
+      );
+    }
+  	session_destroy();
 	}
 
 
@@ -383,7 +387,6 @@ $sqlfeed = "INSERT INTO  feedback (pID,feedback) VALUES ('$userprofile','$feedba
 
 
 
-// $mysqli -> close();
  // $mysqli = null;
 
 
