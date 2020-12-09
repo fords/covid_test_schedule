@@ -48,15 +48,14 @@
 </header>
 
 <body>
-	<h1 style="margin-left:35% ;margin-top:80px"   class="asd">Doctors Information</h1>
+	<h1 style="margin-left:35% ;margin-top:80px"   class="asd">Testing Location Information</h1>
 	<table class="table4">
 		<tr>
-		<th>Doctor ID</th>
-		<th>Doctor Name</th>
+		<th>Testing Site ID</th>
+		<th>Supervisor Name</th>
 		<th>Email</th>
 		<th>Address</th>
 		<th>Contact Number</th>
-		<th>Password</th>
 		<th>Category</th>
 
 		</tr>
@@ -66,7 +65,7 @@
 		if(mysqli_num_rows($result3)>=1){
 			while ($row3=$result3->fetch_assoc()) {
 
-				echo "<tr><td>".$row3["DoctorID"]."</td><td>".$row3["Doctorname"]."</td><td>".$row3["email"]."</td><td>".$row3["Address"]."</td><td>".$row3['ContactNumber']."</td><td>".$row3['password']."</td><td>".$row3["categorey"]."</td></tr>";
+				echo "<tr><td>".$row3["DoctorID"]."</td><td>".$row3["Doctorname"]."</td><td>".$row3["email"]."</td><td>".$row3["Address"]."</td><td>".$row3['ContactNumber']."</td><td>".$row3["categorey"]."</td></tr>";
 			}
 
 
