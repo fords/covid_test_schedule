@@ -113,7 +113,7 @@ if(count($errors)==0){
 
   $_SESSION['UserID']=$UserID;
   $_SESSION['success']="you are now logged in";
-  header('location:../index.php');
+  header('index.php');
 
 
 }
