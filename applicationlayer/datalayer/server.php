@@ -111,8 +111,10 @@ if(count($errors)==0){
     if(move_uploaded_file($_FILES['']))
 
 
+
   // $_SESSION['UserID']=$UserID;
   // $_SESSION['success']="you are now logged in";
+
 
   header('location:login.php');
 
@@ -159,7 +161,7 @@ if (empty($Password)) {
 
 	$_SESSION['UserID']=$UserID;
   	$_SESSION['success']="you are now logged in";
-  header('location:../presentationlayer/patient/index.php');
+  header('location:../presentaionlayer/patient/index.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
 
@@ -245,7 +247,7 @@ if (empty($DoctorPassword2)) {
 
 	$_SESSION['DoctorID']=$DoctorID2;
   	$_SESSION['success']="you are now logged in";
-  	header('location:../presentationlayer/doctor/index2.php');
+  	header('location:../presentaionlayer/doctor/index2.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
 
@@ -282,7 +284,7 @@ $querydoctor="SELECT * FROM doctor WHERE DoctorID=('$doctorprofile')";
 
 
  if (isset($_POST['treatmentHistory'])) {
-		  	header('../presentationlayer/patient/myinfo.php');
+		  	header('../presentaionlayer/patient/myinfo.php');
 			 ?>
 
          	<table class="table2" style="margin-top: -10px">
@@ -355,7 +357,7 @@ if (empty($adminpassword)) {
 
 	$_SESSION['AdminID']=$adminID;
   	$_SESSION['success']="you are now logged in";
-  	header('location:../presentationlayer/admin/index3.php');
+  	header('location:../presentaionlayer/admin/index3.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
 
@@ -382,6 +384,7 @@ $sqlfeed = "INSERT INTO  feedback (pID,feedback) VALUES ('$userprofile','$feedba
 
 
 }
+
 
 
 
