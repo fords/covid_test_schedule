@@ -111,8 +111,10 @@ if(count($errors)==0){
     if(move_uploaded_file($_FILES['']))
 
 
-  $_SESSION['UserID']=$UserID;
-  $_SESSION['success']="you are now logged in";
+
+  // $_SESSION['UserID']=$UserID;
+  // $_SESSION['success']="you are now logged in";
+
 
   header('location:login.php');
 
